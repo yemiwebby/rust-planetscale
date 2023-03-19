@@ -1,0 +1,12 @@
+[package]
+name = "bird_watcher_api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = { version = "0.4.24", features = ["serde"] }
+diesel = { version = "2.0.0", features = ["mysql", "chrono"] }
+dotenvy = "0.15"
+rocket = { version = "0.5.0-rc.2", features = ["json"] }
